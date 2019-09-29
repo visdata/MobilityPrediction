@@ -39,22 +39,6 @@ util
 ```
 
 ```
-data
-.
-|-- BJ/TJ/TS_cleaned_data: 北京/天津/唐山清洗后原始数据
-|-- default: （废弃）
-|-- P3: 在清洗过的北京数据上跑了label后的数据
-|-- P3-sample: 由 get_sample_data.py 生成的global sparsity与local sparsity的数据文件,格式为train/test-10000-{time}-{space}-{type}-{which part}, 其中type为1或2,分别代表global sparsity与local sparsity
-|-- P3-resample: 废弃，不用看
-|—- P4: 在清洗过的北京数据上跑了label, 但保留原来的数据(id,经纬度等)
-|-- P4-resample: resample 实验
-|-- P3-SS-BJ/TJ/TS: label后的数据
-|-- P3-SS-BJ/TJ/TS-inputdata: sample得到的模型输入数据（训练集/测试集）
-|-- P3-SS-BJ/TJ/TS-resample: resample实验数据
-|-- P3-SS-BJ-dense: 密集数据集
-```
-
-```
 stats_ML_models
 .
 |-- model_feature.py: 窗口模型, 参数见 python3 model1.py -h
@@ -70,4 +54,20 @@ model
 |-- model_run.py: 运行模型
 |-- TD_model.py: 模型定义文件（LSTM，ATT等）
 |-- TD_reader.py: 输入数据处理文件
+```
+
+```
+42:/datahouse/yurl/TalkingData/data
+.
+|-- BJ/TJ/TS_cleaned_data: 北京/天津/唐山清洗后原始数据
+|-- default: （废弃）
+|-- P3: 在清洗过的北京数据上跑了label后的数据
+|-- P3-sample: 由 get_sample_data.py 生成的global sparsity与local sparsity的数据文件,格式为train/test-10000-{time}-{space}-{type}-{which part}, 其中type为1或2,分别代表global sparsity与local sparsity
+|-- P3-resample: 废弃，不用看
+|—- P4: 在清洗过的北京数据上跑了label, 但保留原来的数据(id,经纬度等)
+|-- P4-resample: resample 实验
+|-- P3-SS-BJ/TJ/TS: label后的数据
+|-- P3-SS-BJ/TJ/TS-inputdata: sample得到的模型输入数据（训练集/测试集）
+|-- P3-SS-BJ/TJ/TS-resample: resample实验数据
+|-- P3-SS-BJ-dense: 密集数据集
 ```
