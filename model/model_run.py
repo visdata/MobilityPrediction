@@ -174,7 +174,7 @@ def run_epoch(session, model, config, batcher, merged_summary_op, epoch_id, log_
 						 model.input_minutes: input_data[:, :, 1], model.input_lat: input_data[:, :, 2],
 						 model.input_lon: input_data[:, :, 3],
 						 model.de_input_hour: input_data[:, :, 0], model.de_input_minutes: input_data[:, :, 1],
-						 model.de_input_lat: input_data[:, :, 2],  model.de_input_lon: input_data[:, :, 2],
+						 model.de_input_lat: input_data[:, :, 2],  model.de_input_lon: input_data[:, :, 3],
 						 model.en_input_lens: input_lens,
 						 model.de_input_lens: de_input_lens, model.max_lseq_len: max_lseq_len, model.targets: targets,
 						 model.mask: mask, }
